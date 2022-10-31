@@ -1,0 +1,106 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', sans-serif;
+}
+
+body {
+    background: url("background.jpeg");
+    background-size: cover;
+    background-position-y: 25%;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.container {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: rgb(72, 69, 69);
+    border-radius: 10px;
+    opacity: 75%;
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+form button {
+    width: 100px;
+    margin-top: 10px;
+    color: white;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+}
+
+form label {
+    font-size: 25px;
+    color: yellow;
+}
+
+form select,
+form input {
+    outline: none;
+}
+
+#result {
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+/* css for responsiveness */
+@media only screen and (max-width: 700px) {
+    body {
+        background: palevioletred;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .container {
+        height: 30vh;
+        margin-top: 10px;
+    }
+
+    .box {
+        width: 90%;
+        height: 100%;
+        opacity: 100%;
+        background-color: brown;
+        display: block;
+    }
+
+    form {
+        width: 100%;
+        height: 60%;
+        margin-top: 15px;
+    }
+
+    form label {
+        font-size: 15px;
+        color: white;
+    }
+
+    form button {
+        width: 20%;
+    }
+
+    #result {
+        font-size: 20px;
+    }
+}
